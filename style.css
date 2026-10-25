@@ -1,0 +1,50 @@
+body{
+    background-image: url("./bottom-of-the-ocean-scaled.webp") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: bottom;
+    height: 800px;
+    position: relative;
+}
+.akula{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    bottom: 80px;
+    z-index: 20;
+    animation: akula 25s;
+}
+@keyframes akula {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(800px);
+    }
+    100%{
+        transform: translateX(800px);
+    }
+}
+.baliq{
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    bottom: 130px;
+    left: 800px;
+    z-index: 5;
+    animation: baliq 20s 4s;
+}
+@keyframes baliq {
+    0%{
+        transform: translateX(0);
+                opacity: 50%;
+
+    }
+    50%{
+        transform: translateX(250px);
+    }
+    100%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
